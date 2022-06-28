@@ -27,66 +27,91 @@ fn bindgen_test_layout____tracy_source_location_data() {
         8usize,
         concat!("Alignment of ", stringify!(___tracy_source_location_data))
     );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_source_location_data>())).name as *const _ as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_source_location_data),
-            "::",
-            stringify!(name)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_source_location_data>())).function as *const _ as usize
-        },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_source_location_data),
-            "::",
-            stringify!(function)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_source_location_data>())).file as *const _ as usize
-        },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_source_location_data),
-            "::",
-            stringify!(file)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_source_location_data>())).line as *const _ as usize
-        },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_source_location_data),
-            "::",
-            stringify!(line)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_source_location_data>())).color as *const _ as usize
-        },
-        28usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_source_location_data),
-            "::",
-            stringify!(color)
-        )
-    );
+    fn test_field_name() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_source_location_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).name) as usize - ptr as usize
+            },
+            0usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_source_location_data),
+                "::",
+                stringify!(name)
+            )
+        );
+    }
+    test_field_name();
+    fn test_field_function() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_source_location_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).function) as usize - ptr as usize
+            },
+            8usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_source_location_data),
+                "::",
+                stringify!(function)
+            )
+        );
+    }
+    test_field_function();
+    fn test_field_file() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_source_location_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).file) as usize - ptr as usize
+            },
+            16usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_source_location_data),
+                "::",
+                stringify!(file)
+            )
+        );
+    }
+    test_field_file();
+    fn test_field_line() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_source_location_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).line) as usize - ptr as usize
+            },
+            24usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_source_location_data),
+                "::",
+                stringify!(line)
+            )
+        );
+    }
+    test_field_line();
+    fn test_field_color() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_source_location_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).color) as usize - ptr as usize
+            },
+            28usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_source_location_data),
+                "::",
+                stringify!(color)
+            )
+        );
+    }
+    test_field_color();
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -106,26 +131,40 @@ fn bindgen_test_layout____tracy_c_zone_context() {
         4usize,
         concat!("Alignment of ", stringify!(___tracy_c_zone_context))
     );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<___tracy_c_zone_context>())).id as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_c_zone_context),
-            "::",
-            stringify!(id)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<___tracy_c_zone_context>())).active as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_c_zone_context),
-            "::",
-            stringify!(active)
-        )
-    );
+    fn test_field_id() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_c_zone_context>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).id) as usize - ptr as usize
+            },
+            0usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_c_zone_context),
+                "::",
+                stringify!(id)
+            )
+        );
+    }
+    test_field_id();
+    fn test_field_active() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_c_zone_context>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).active) as usize - ptr as usize
+            },
+            4usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_c_zone_context),
+                "::",
+                stringify!(active)
+            )
+        );
+    }
+    test_field_active();
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -146,36 +185,57 @@ fn bindgen_test_layout____tracy_gpu_time_data() {
         8usize,
         concat!("Alignment of ", stringify!(___tracy_gpu_time_data))
     );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<___tracy_gpu_time_data>())).gpuTime as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_time_data),
-            "::",
-            stringify!(gpuTime)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<___tracy_gpu_time_data>())).queryId as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_time_data),
-            "::",
-            stringify!(queryId)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<___tracy_gpu_time_data>())).context as *const _ as usize },
-        10usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_time_data),
-            "::",
-            stringify!(context)
-        )
-    );
+    fn test_field_gpuTime() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_time_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).gpuTime) as usize - ptr as usize
+            },
+            0usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_time_data),
+                "::",
+                stringify!(gpuTime)
+            )
+        );
+    }
+    test_field_gpuTime();
+    fn test_field_queryId() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_time_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).queryId) as usize - ptr as usize
+            },
+            8usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_time_data),
+                "::",
+                stringify!(queryId)
+            )
+        );
+    }
+    test_field_queryId();
+    fn test_field_context() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_time_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).context) as usize - ptr as usize
+            },
+            10usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_time_data),
+                "::",
+                stringify!(context)
+            )
+        );
+    }
+    test_field_context();
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -196,42 +256,57 @@ fn bindgen_test_layout____tracy_gpu_zone_begin_data() {
         8usize,
         concat!("Alignment of ", stringify!(___tracy_gpu_zone_begin_data))
     );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_gpu_zone_begin_data>())).srcloc as *const _ as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_zone_begin_data),
-            "::",
-            stringify!(srcloc)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_gpu_zone_begin_data>())).queryId as *const _ as usize
-        },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_zone_begin_data),
-            "::",
-            stringify!(queryId)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_gpu_zone_begin_data>())).context as *const _ as usize
-        },
-        10usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_zone_begin_data),
-            "::",
-            stringify!(context)
-        )
-    );
+    fn test_field_srcloc() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_zone_begin_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).srcloc) as usize - ptr as usize
+            },
+            0usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_zone_begin_data),
+                "::",
+                stringify!(srcloc)
+            )
+        );
+    }
+    test_field_srcloc();
+    fn test_field_queryId() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_zone_begin_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).queryId) as usize - ptr as usize
+            },
+            8usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_zone_begin_data),
+                "::",
+                stringify!(queryId)
+            )
+        );
+    }
+    test_field_queryId();
+    fn test_field_context() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_zone_begin_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).context) as usize - ptr as usize
+            },
+            10usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_zone_begin_data),
+                "::",
+                stringify!(context)
+            )
+        );
+    }
+    test_field_context();
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -251,30 +326,40 @@ fn bindgen_test_layout____tracy_gpu_zone_end_data() {
         2usize,
         concat!("Alignment of ", stringify!(___tracy_gpu_zone_end_data))
     );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_gpu_zone_end_data>())).queryId as *const _ as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_zone_end_data),
-            "::",
-            stringify!(queryId)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_gpu_zone_end_data>())).context as *const _ as usize
-        },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_zone_end_data),
-            "::",
-            stringify!(context)
-        )
-    );
+    fn test_field_queryId() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_zone_end_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).queryId) as usize - ptr as usize
+            },
+            0usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_zone_end_data),
+                "::",
+                stringify!(queryId)
+            )
+        );
+    }
+    test_field_queryId();
+    fn test_field_context() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_zone_end_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).context) as usize - ptr as usize
+            },
+            2usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_zone_end_data),
+                "::",
+                stringify!(context)
+            )
+        );
+    }
+    test_field_context();
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -297,66 +382,91 @@ fn bindgen_test_layout____tracy_gpu_new_context_data() {
         8usize,
         concat!("Alignment of ", stringify!(___tracy_gpu_new_context_data))
     );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_gpu_new_context_data>())).gpuTime as *const _ as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_new_context_data),
-            "::",
-            stringify!(gpuTime)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_gpu_new_context_data>())).period as *const _ as usize
-        },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_new_context_data),
-            "::",
-            stringify!(period)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_gpu_new_context_data>())).context as *const _ as usize
-        },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_new_context_data),
-            "::",
-            stringify!(context)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_gpu_new_context_data>())).flags as *const _ as usize
-        },
-        13usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_new_context_data),
-            "::",
-            stringify!(flags)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_gpu_new_context_data>())).type_ as *const _ as usize
-        },
-        14usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_new_context_data),
-            "::",
-            stringify!(type_)
-        )
-    );
+    fn test_field_gpuTime() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_new_context_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).gpuTime) as usize - ptr as usize
+            },
+            0usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_new_context_data),
+                "::",
+                stringify!(gpuTime)
+            )
+        );
+    }
+    test_field_gpuTime();
+    fn test_field_period() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_new_context_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).period) as usize - ptr as usize
+            },
+            8usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_new_context_data),
+                "::",
+                stringify!(period)
+            )
+        );
+    }
+    test_field_period();
+    fn test_field_context() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_new_context_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).context) as usize - ptr as usize
+            },
+            12usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_new_context_data),
+                "::",
+                stringify!(context)
+            )
+        );
+    }
+    test_field_context();
+    fn test_field_flags() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_new_context_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).flags) as usize - ptr as usize
+            },
+            13usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_new_context_data),
+                "::",
+                stringify!(flags)
+            )
+        );
+    }
+    test_field_flags();
+    fn test_field_type() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_new_context_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).type_) as usize - ptr as usize
+            },
+            14usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_new_context_data),
+                "::",
+                stringify!(type_)
+            )
+        );
+    }
+    test_field_type();
 }
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -377,42 +487,57 @@ fn bindgen_test_layout____tracy_gpu_context_name_data() {
         8usize,
         concat!("Alignment of ", stringify!(___tracy_gpu_context_name_data))
     );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_gpu_context_name_data>())).context as *const _ as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_context_name_data),
-            "::",
-            stringify!(context)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_gpu_context_name_data>())).name as *const _ as usize
-        },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_context_name_data),
-            "::",
-            stringify!(name)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<___tracy_gpu_context_name_data>())).len as *const _ as usize
-        },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(___tracy_gpu_context_name_data),
-            "::",
-            stringify!(len)
-        )
-    );
+    fn test_field_context() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_context_name_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).context) as usize - ptr as usize
+            },
+            0usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_context_name_data),
+                "::",
+                stringify!(context)
+            )
+        );
+    }
+    test_field_context();
+    fn test_field_name() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_context_name_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).name) as usize - ptr as usize
+            },
+            8usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_context_name_data),
+                "::",
+                stringify!(name)
+            )
+        );
+    }
+    test_field_name();
+    fn test_field_len() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<___tracy_gpu_context_name_data>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).len) as usize - ptr as usize
+            },
+            16usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(___tracy_gpu_context_name_data),
+                "::",
+                stringify!(len)
+            )
+        );
+    }
+    test_field_len();
 }
 type TracyCZoneCtx = ___tracy_c_zone_context;
 extern "C" {
